@@ -1,0 +1,9 @@
+:root {
+  --gray_triada: #bab8b5;
+  --light_blue: #254587;
+  --strong_blue: #04043d;
+}
+
+html {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
