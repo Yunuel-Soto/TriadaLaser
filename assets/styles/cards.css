@@ -1,0 +1,28 @@
+.content_cards {
+    width: 100%;
+    padding: 1rem;
+}
+
+.content_cards > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 1rem;
+}
+
+.content_cards > div .card {
+    width: 25%;
+    flex-basis: 200px;
+    box-shadow: 0 0 10px #000;
+    border-radius: 10px;
+}
+
+.card picture {
+    width: 90%;
+}
+
+.card picture img {
+    width: 100%;
+    border-radius: 10px;
+}
