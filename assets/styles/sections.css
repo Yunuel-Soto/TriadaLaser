@@ -3,6 +3,7 @@
     width: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 15px;
     padding: 1rem;    
     color: #fff;
@@ -13,17 +14,24 @@
 }
 
 .content_sect picture {
-    width: 80%;
+    flex: 1;
+    flex-basis: 200px;
 }
 
 .content_sect div {
     display: flex;
     flex-direction: column;
     padding-top: 15px;
+    flex: 5;
+    flex-basis: 500px;
 }
 
 .content_sect div p {
-    font-size: var(--text_size);
+    font-size: clamp(16px, 4vw, 19px);
+}
+
+.content_sect div h2 {
+    font-size: clamp(19px, 5vw, 25px);
 }
 
 section .content_sect:nth-child(2) {
@@ -37,4 +45,13 @@ section .content_sect:nth-child(2) div {
 
 section .content_sect:nth-child(2) picture {
     order: 2;
+}
+
+@media (max-width: 763px) {
+    .content_sect picture {
+        order: 2;
+    }
+    .content_sect div {
+        order: 1;
+    }
 }

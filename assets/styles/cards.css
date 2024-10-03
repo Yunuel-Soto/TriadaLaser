@@ -1,6 +1,7 @@
 .content_cards {
     width: 100%;
     padding: 1rem;
+    background-color: #eee;
 }
 
 .content_cards > div {
@@ -9,20 +10,75 @@
     flex-wrap: wrap;
     width: 100%;
     padding: 1rem;
+    padding-top: 2rem;
+    gap: 50px;     
 }
 
-.content_cards > div .card {
-    width: 25%;
-    flex-basis: 200px;
+.content_cards .card {
+    flex: 1;
+    flex-basis: 500px;
     box-shadow: 0 0 10px #000;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .card picture {
-    width: 90%;
+    flex: 1;
+    flex-basis: 190px;
+    max-height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 .card picture img {
     width: 100%;
-    border-radius: 10px;
+    filter: grayscale(100%);
+}
+
+.card .content_text {
+    flex: 2;
+    flex-basis: 200px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.card:hover img {
+    transition: all 0.5s;
+    filter: grayscale(0%);
+}
+
+.card:not(:hover) img {
+    transition: all 0.5s;
+    filter: grayscale(100%);
+}
+
+.card:hover .content_text h2 {
+    color: var(--light_blue);
+    transition: all 0.5s;
+}
+
+.card:not(:hover) .content_text h2 {
+    color: #000;
+    transition: all 0.5s;
+}
+
+.card h2 {
+    font-size: clamp(16px, 5vw, 23px);
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: clamp(14px, 3vw, 16px);
+}
+
+.content_cards h2 {
+    font-size: clamp(23px, 6vw, 26px);
 }
