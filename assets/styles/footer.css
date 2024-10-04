@@ -1,3 +1,84 @@
 footer {
-    background-color: var(--strong_blue);
+    background-color: var(--light_blue);
+    color: #fff;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer .top {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+footer .box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+    flex-basis: 280px;
+}
+
+footer .box:nth-child(2) {
+    gap: 0px;
+}
+
+footer h2 {
+    margin-bottom: 0.5rem;
+}
+
+footer .search_social p {
+    margin-bottom: 5px;
+    margin-left: 1rem;
+}
+
+footer .box .personal_info a {
+    color: #fff;
+}
+
+footer .search_social a {
+    background-color: #fff;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+footer .icons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: start;
+    padding-left: 1rem;
+}
+
+footer .content_maps iframe {
+    width: 100%;
+    height: 100%;
+}
+
+footer .content_maps .map {
+    width: 100%;
+    height: 220px;
+}
+
+footer .bottom .box {
+    margin-top: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;        
+}
+
+footer .bottom p {
+    border-top: 1px solid ;
+    width: 80%;
+    padding-top: 1rem;
 }

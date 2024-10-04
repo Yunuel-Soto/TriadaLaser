@@ -78,14 +78,14 @@ nav ul li a:not(:hover) + .line {
 }
 
 .content_media {
-  height: 70vh;
+  height: 38vw;
   overflow-y: hidden;
   overflow-x: hidden;
 }
 
 .content_media div label {
   font-size: 5vw;
-  top: 40%;
+  top: 25vw;
   left: 0;
   color: #fff;
   width: 100%;
@@ -108,11 +108,5 @@ nav ul li a:not(:hover) + .line {
   100% {
     transform: translateX(0px);
     opacity: 1;
-  }
-}
-
-@media (max-width: 1147px) {
-  .content_media div label {
-    top: 55%;
   }
 }
