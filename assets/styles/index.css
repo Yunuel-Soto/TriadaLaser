@@ -123,8 +123,8 @@ nav {
 
 .popchat, .up {
   position: fixed;
-  left: 94vw;
-  bottom: 4vh;
+  left: 93vw;
+  bottom: 30px;
   background-color: var(--light_blue);
   width: 55px;
   height: 55px;
@@ -137,7 +137,7 @@ nav {
 }
 
 .up {
-  bottom: 14vh;
+  bottom: 100px;
   display: none;
 }
 
@@ -216,10 +216,27 @@ nav {
   }
 
   .popchat, .up {
-    left: 80vw;
+    left: 85vw;
   }
-  .up {
-    bottom: 15vh;
+  /* .up {
+    bottom: 30px;
+  } */
+}
+
+@media (max-width: 1020px) {
+  .popchat, .up {
+    left: 90vw;
   }
-  
+}
+
+@media (max-width: 726px) {
+  .popchat, .up {
+    left: 87vw;
+  }
+}
+
+@media (max-width: 550px) {
+  .popchat, .up {
+    left: 83vw;
+  }
 }
