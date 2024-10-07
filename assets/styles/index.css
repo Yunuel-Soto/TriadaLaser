@@ -11,7 +11,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   padding-right: 2%;
-  background-color: var(--light_blue); 
+  background-color: var(--light_blue);
   transition: all 0.5s;
   z-index: 1;
 }
@@ -128,7 +128,6 @@ nav ul li a:not(:hover) + .line {
     opacity: 1;
   }
 }
-<<<<<<< HEAD
 
 @keyframes navBar {
   0% {
@@ -194,5 +193,3 @@ nav ul li a:not(:hover) + .line {
     animation-iteration-count: 1;
   } */
 }
-=======
->>>>>>> b8fc1915a8609f44b5f19bc9b3cdb85b5a53ea63
