@@ -5,26 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/styles/index.css" />
     <link rel="stylesheet" href="./assets/styles/variables.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./assets/styles/sections.css" />
+    <link rel="stylesheet" href="./assets/styles/cards.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/styles/sections.css">
     <link rel="stylesheet" href="./assets/styles/cards.css">
+    <link rel="stylesheet" href="./assets/styles/footer.css">
+    <link rel="shortcut icon" href="./assets/img/logo.jpg" >
     <title>TriadaLaser</title>
   </head>
   <body>
     <nav>
-      <ul>
-        <li>
-          <picture>
-            <img src="./assets/img/logo.jpg" alt="" />
-          </picture>
-        </li>
+      <ul class="nav2_1">
+        <ul>
+          <li>
+            <picture>
+              <img src="./assets/img/logo.jpg" alt="" />
+            </picture>
+          </li>
+        </ul>
+        <ul class="nav2">
+          <li id="btn_nav">
+            <img src="./assets/img/list.png" alt="" />
+          </li>
+        </ul>
       </ul>
-      <ul>
+      <ul class="nav1" id="nav1">
         <li>
           <a href="./index.html">Inicio</a>
           <div class="line"></div>
         </li>
         <li>
-          <a>Nosotros</a>
+          <a href="./aboutUs.html">Nosotros</a>
           <div class="line"></div>
         </li>
         <li>
@@ -47,38 +64,144 @@
             />
             Su navegador no puede reproducir este formato de video
           </video>
-          <label>Hacemos tus proyectos realidad</label>
+          <label>TU VISION, NUESTRO CORTE LASER</label>
         </div>
       </header>
       <section>
         <div class="content_sect">
           <picture>
-            <img src="./assets/img/imagen_de_stock.jpg" alt="imagen de primer sect">
+            <img
+              src="./assets/img/imagen_de_stock.jpg"
+              alt="imagen de primer sect"
+            />
           </picture>
           <div>
             <h2>¿Necesitas un trabajo personalizado?</h2>
-            <br>
+            <br />
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt eius deleniti soluta voluptates fuga porro placeat animi nulla exercitationem, 
-              officia aperiam accusantium eum quibusdam praesentium, voluptas asperiores ipsa unde molestias dignissimos rem, quod quaerat inventore fugit dolorem! 
-              Recusandae, debitis nihil.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt
+              eius deleniti soluta voluptates fuga porro placeat animi nulla
+              exercitationem, officia aperiam accusantium eum quibusdam
+              praesentium, voluptas asperiores ipsa unde molestias dignissimos
+              rem, quod quaerat inventore fugit dolorem! Recusandae, debitis
+              nihil.
             </p>
           </div>
-        </div>        
+        </div>
       </section>
       <section class="content_cards">
         <h2>Tipos de trabajo</h2>
         <div>
           <div class="card">
             <picture>
-              <img src="./assets/img/stock_2.jpg" alt="">
+              <img src="./assets/img/stock_2.jpg" alt="" />
+            </picture>
+            <div class="content_text"></div>
+          </div>
+          <div class="content_text">
+            <h2>Regalos hechos de madera y detalles</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Animi sit tempore omnis quasi dolor perferendis accusantium maiores, labore exercitationem 
+              placeat impedit voluptates asperiores at beatae! Totam illo eaque inventore magni!
+            </p>
+          </div>
+        </div>
+
+          <div class="card">
+            <picture>
+              <img src="./assets/img/stock_7.jpeg" alt="" class="img_color">
             </picture>
             <div class="content_text">
-  
+              <h2>Regalos hechos de madera y detalles</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Animi sit tempore omnis quasi dolor perferendis accusantium maiores, labore exercitationem 
+                placeat impedit voluptates asperiores at beatae! Totam illo eaque inventore magni!                
+              </p>
             </div>
-        </div>
+          </div>
+
+          <div class="card">
+            <picture>
+              <img src="./assets/img/stock_4.jpeg" alt="" class="img_color">
+            </picture>
+            <div class="content_text">
+              <h2>Regalos hechos de madera y detalles</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Animi sit tempore omnis quasi dolor perferendis accusantium maiores, labore exercitationem 
+                placeat impedit voluptates asperiores at beatae! Totam illo eaque inventore magni!
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <picture>
+              <img src="./assets/img/stock_5.jpeg" alt="" class="img_color">
+            </picture>
+            <div class="content_text">
+              <h2>Regalos hechos de madera y detalles</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Animi sit tempore omnis quasi dolor perferendis accusantium maiores, labore exercitationem 
+                placeat impedit voluptates asperiores at beatae! Totam illo eaque inventore magni!
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+
+      <footer>
+        <div class="top">
+          <div class="box">
+            <div class="personal_info">
+              <h2>Contactanos en</h2>
+              <p>Numero de telefono: 4152341212</p>        
+              <p>Correo electronico: 
+                <a href="">
+                  triadaLaser@gmail.com
+                </a>
+              </p> 
+            </div>
+            <div class="search_social">
+              <h2>Encuentranos en nuestras redes sociales</h2>
+              <div class="icons">
+                <a href="">
+                  <img src="./assets/img/facebook.png" alt="">              
+                </a>
+                <a href="https://www.instagram.com/triadalaser?igsh=cDF4dWI4cXljemVi">
+                  <img src="./assets/img/instagram.png" alt="">
+                </a>
+                <a href="">
+                  <img src="./assets/img/logotipos.png" alt="">
+                </a>
+                <a href="https://wa.me/4151027382?text=Hola%20me%20gustaria%20cotizar">
+                  <img src="./assets/img/whats.png" alt="">
+                </a>
+              </div>                  
+            </div>
+          </div>
+          <div class="box">
+            <h2>Localizacion</h2>
+            <div class="content_maps">
+              <div class="content_text">
+                <p>Av. Las americas #119, Ignacio Ramirez, San Miguel de Allende</p>
+              </div>
+              <div class="map"> 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3727.334467847386!2d-100.75089462578157!3d20.89885909222957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842b51a98698b87f%3A0x8363b36ec9a250b6!2sLa%20Paz%2C%20Allende%2C%20San%20Miguel%20de%20Allende%2C%20Gto.!5e0!3m2!1ses!2smx!4v1728066480654!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>   
+        </div>
+        <div class="bottom">
+          <div class="box">
+              <p>Copyright © 2024 by TriadaLaser</p>
+          </div>           
+        </div>
+      </footer>
     </main>
   </body>
 </html>
+
+<script src="./assets/js/navBarAction.js"></script>
