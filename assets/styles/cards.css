@@ -19,6 +19,7 @@
     flex-basis: 500px;
     box-shadow: 0 0 10px #000;
     border-radius: 15px;
+    max-width: 579px;
 }
 
 .card picture {
