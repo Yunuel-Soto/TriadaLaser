@@ -11,9 +11,19 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   padding-right: 2%;
-  background-color: var(--light_blue); 
+  background-color: var(--light_blue);
   transition: all 0.5s;
   z-index: 1;
+}
+
+nav .nav2_1 {
+  /* width: 100%; */
+  font-size: 21px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 2%;
+  background-color: var(--light_blue);
 }
 
 nav ul {
@@ -37,13 +47,15 @@ nav ul li:first-child picture img {
 nav ul li:first-child picture {
   display: flex;
   flex-direction: row;
-  /* padding: 1px;
-  margin: 5px; */
 }
 
 nav ul li a {
   text-decoration: none;
   color: #ddd;
+  cursor: pointer;
+}
+
+nav .nav2 li {
   cursor: pointer;
 }
 
@@ -92,13 +104,17 @@ nav ul li a:not(:hover) + .line {
   color: #fff;
   width: 100%;
   text-align: center;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Protest Guerrilla";
   position: absolute;
   transform: translateX(-100%);
   animation-name: title;
   animation-duration: 2s;
   animation-fill-mode: both;
   animation-iteration-count: 1;
+}
+
+.nav2 {
+  display: none;
 }
 
 @keyframes title {
@@ -111,4 +127,69 @@ nav ul li a:not(:hover) + .line {
     transform: translateX(0px);
     opacity: 1;
   }
+}
+
+@keyframes navBar {
+  0% {
+    height: 0%;
+  }
+
+  50% {
+    height: 0px;
+  }
+
+  100% {
+    height: 200px;
+  }
+}
+
+@media (max-width: 1147px) {
+  .content_media div label {
+    top: 55%;
+  }
+}
+
+@media (max-width: 640px) {
+  nav {
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  .nav2 {
+    display: flex;
+  }
+
+  .nav2_1 {
+    width: 100%;
+  }
+
+  .nav1 {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    height: 0px;
+    overflow-y: hidden;
+    background-color: #ddd;
+    transition: height 0.5s ease-in-out;
+  }
+
+  .nav1 li a {
+    color: #000;
+  }
+
+  .nav1 li a:hover {
+    color: var(--light_blue);
+  }
+
+  nav ul li .line {
+    background-color: var(--light_blue);
+  }
+  /* 
+  .animate_bar {
+    animation-name: navBar;
+    animation-duration: 1s;
+    animation-fill-mode: initial;
+    animation-iteration-count: 1;
+  } */
 }
