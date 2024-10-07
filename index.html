@@ -5,18 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/styles/index.css" />
     <link rel="stylesheet" href="./assets/styles/variables.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap"
+      rel="stylesheet"
+    />
     <title>TriadaLaser</title>
   </head>
   <body>
     <nav>
-      <ul>
-        <li>
-          <picture>
-            <img src="./assets/img/logo.jpg" alt="" />
-          </picture>
-        </li>
+      <ul class="nav2_1">
+        <ul>
+          <li>
+            <picture>
+              <img src="./assets/img/logo.jpg" alt="" />
+            </picture>
+          </li>
+        </ul>
+        <ul class="nav2">
+          <li id="btn_nav">
+            <img src="./assets/img/list.png" alt="" />
+          </li>
+        </ul>
       </ul>
-      <ul>
+      <ul class="nav1" id="nav1">
         <li>
           <a href="./index.html">Inicio</a>
           <div class="line"></div>
@@ -45,10 +58,12 @@
             />
             Su navegador no puede reproducir este formato de video
           </video>
-          <label>Hacemos tus proyectos realidad</label>
+          <label>TU VISION, NUESTRO CORTE LASER</label>
         </div>
       </header>
       <section></section>
     </main>
   </body>
 </html>
+
+<script src="./assets/js/navBarAction.js"></script>
