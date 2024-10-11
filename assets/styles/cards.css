@@ -30,6 +30,7 @@
     border-radius: 10px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .card picture img {
@@ -86,6 +87,7 @@
     border: none;
     font-size: clamp(14px, 3vw, 5px);
     width: 10vw;
+    min-width: 100px;
     height: 40px;
     cursor: pointer;
 }
@@ -95,4 +97,10 @@
     display: flex;
     justify-content: end;
     padding-top: 10px;
+}
+
+@media (max-width: 560px) {
+    .card .content_btn button {
+        width: 100%;
+    }
 }
