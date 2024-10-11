@@ -9,16 +9,18 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: stretch;
-    justify-content: space-between;
+    justify-content: start;
     width: 100%;
-    padding: 1rem;
+    /* padding: 1rem; */
     padding-top: 2rem;
     row-gap: 30px;
     column-gap: 20px;     
 }
 
 .content_cards .card {
-    flex-basis: 340px;
+    flex: 1;
+    flex-basis: 290px;
+    max-width: 320px;
     box-shadow: 0 0 10px #000;
     border-radius: 15px;
     /* max-width: 579px; */    
@@ -32,6 +34,7 @@
     border-radius: 10px;
     display: flex;
     justify-content: center;
+    /* align-items: center;     */
 }
 
 .card picture img {
@@ -45,7 +48,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: start;
 }
 
 .card {
