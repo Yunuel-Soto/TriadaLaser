@@ -8,18 +8,20 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
     width: 100%;
     padding: 1rem;
     padding-top: 2rem;
-    gap: 50px;     
+    row-gap: 30px;
+    column-gap: 20px;     
 }
 
 .content_cards .card {
-    flex: 1;
-    flex-basis: 500px;
+    flex-basis: 340px;
     box-shadow: 0 0 10px #000;
     border-radius: 15px;
-    max-width: 579px;
+    /* max-width: 579px; */    
 }
 
 .card picture {
@@ -30,7 +32,6 @@
     border-radius: 10px;
     display: flex;
     justify-content: center;
-    /* align-items: center;     */
 }
 
 .card picture img {
@@ -49,7 +50,7 @@
 
 .card {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
@@ -87,7 +88,7 @@
     border: none;
     font-size: clamp(14px, 3vw, 5px);
     width: 10vw;
-    min-width: 100px;
+    min-width: 90%;
     height: 40px;
     cursor: pointer;
 }
@@ -95,12 +96,18 @@
 .card .content_btn {
     width: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: center;
     padding-top: 10px;
 }
 
 @media (max-width: 560px) {
     .card .content_btn button {
         width: 100%;
+    }
+}
+
+@media (max-width: 1120px) {
+    .content_cards > div {
+        justify-content: space-around;
     }
 }
