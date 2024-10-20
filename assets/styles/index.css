@@ -47,6 +47,7 @@ nav ul li:first-child picture img {
 nav ul li:first-child picture {
   display: flex;
   flex-direction: row;
+  margin-bottom: 5px;
 }
 
 nav ul li a {
@@ -101,7 +102,7 @@ nav ul li a:not(:hover) + .line {
   font-size: 5vw;
   top: 25vw;
   left: 0;
-  color: #fff;
+  color: #eeeeeee9;
   width: 100%;
   text-align: center;
   font-family: "Protest Guerrilla";
@@ -121,7 +122,8 @@ nav {
   top: -200px;
 }
 
-.popchat, .up {
+.popchat,
+.up {
   position: fixed;
   left: 93vw;
   bottom: 30px;
@@ -139,6 +141,24 @@ nav {
 .up {
   bottom: 100px;
   display: none;
+}
+
+.content_media div .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+}
+
+.content_media div .logo img {
+  width: 30%;
+  animation-name: logo;
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+  animation-delay: 0.5s;
 }
 
 @keyframes title {
@@ -167,6 +187,15 @@ nav {
   }
 }
 
+@keyframes logo {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
 
 @media (max-width: 1147px) {
   .content_media div label {
@@ -215,7 +244,8 @@ nav {
     width: 72px;
   }
 
-  .popchat, .up {
+  .popchat,
+  .up {
     left: 85vw;
   }
   /* .up {
@@ -224,19 +254,22 @@ nav {
 }
 
 @media (max-width: 1020px) {
-  .popchat, .up {
+  .popchat,
+  .up {
     left: 90vw;
   }
 }
 
 @media (max-width: 726px) {
-  .popchat, .up {
+  .popchat,
+  .up {
     left: 87vw;
   }
 }
 
 @media (max-width: 550px) {
-  .popchat, .up {
+  .popchat,
+  .up {
     left: 83vw;
   }
 }
