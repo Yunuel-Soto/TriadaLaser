@@ -138,26 +138,20 @@ nav {
   cursor: pointer;
 }
 
-.faceboock picture img,
-.instagram picture img,
-.whatsapp picture img {
+.social picture img {
   width: 100%;
   height: 100%;
   border-radius: 100%;
 }
 
-.faceboock,
-.instagram,
-.whatsapp {
+.social {
   position: fixed;
   bottom: 88px;
   left: 93vw;
   z-index: 1;
   width: 55px;
-}
-
-.social {
   transition: all 0.5s;
+  cursor: pointer;
 }
 
 .instagram {
