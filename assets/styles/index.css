@@ -125,11 +125,11 @@ nav {
 .popchat,
 .up {
   position: fixed;
-  left: 93vw;
+  left: 94vw;
   bottom: 30px;
   background-color: var(--light_blue);
-  width: 55px;
-  height: 55px;
+  width: 50px;
+  height: 50px;
   border-radius: 100px;
   display: flex;
   justify-content: center;
@@ -147,9 +147,9 @@ nav {
 .social {
   position: fixed;
   bottom: 88px;
-  left: 93vw;
+  left: 94vw;
   z-index: 1;
-  width: 55px;
+  width: 50px;
   transition: all 0.5s;
   cursor: pointer;
 }
@@ -163,7 +163,7 @@ nav {
 }
 
 .up {
-  bottom: 100px;
+  bottom: 90px;
   display: none;
 }
 
@@ -281,7 +281,7 @@ nav {
   .popchat,
   .up,
   .social {
-    left: 90vw;
+    left: 93vw;
   }
 }
 
@@ -289,7 +289,7 @@ nav {
   .popchat,
   .up,
   .social {
-    left: 87vw;
+    left: 90vw;
   }
 }
 
@@ -297,6 +297,12 @@ nav {
   .popchat,
   .up,
   .social {
-    left: 83vw;
+    left: 80vw;
+    width: 45px;
+    height: 45px;
+  }
+
+  .social {
+    width: 45px;
   }
 }

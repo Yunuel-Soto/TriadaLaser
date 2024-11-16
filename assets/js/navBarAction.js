@@ -37,7 +37,7 @@ window.addEventListener("scroll", function () {
     upPop.style.display = "flex";
 
     socials.forEach(function (social) {
-      social.style.transform = "translateY(-75px)";
+      social.style.transform = "translateY(-57px)";
     });
   }
 
