@@ -25,8 +25,6 @@ let lastScrollTop = 0;
 window.addEventListener("scroll", function () {
   let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
-  console.log(currentScroll);
-
   if (currentScroll == 0) {
     upPop.style.display = "none";
 
@@ -41,32 +39,32 @@ window.addEventListener("scroll", function () {
     });
   }
 
-  if (currentScroll < lastScrollTop) {
-    navMain.style.position = "sticky";
-    navMain.style.top = "0px";
-    navMain.style.zIndex = "1000";
-  } else {
-    navMain.style.top = "-200px";
-    navMain.style.position = "static";
-    navMain.style.zIndex = "1000";
-  }
+  // if (currentScroll < lastScrollTop) {
+  //   navMain.style.position = "sticky";
+  //   navMain.style.top = "0px";
+  //   navMain.style.zIndex = "1000";
+  // } else {
+  //   navMain.style.top = "-200px";
+  //   navMain.style.position = "static";
+  //   navMain.style.zIndex = "1000";
+  // }
 
   lastScrollTop = currentScroll;
 });
 
 let lastY = 0;
 
-window.addEventListener("mousemove", function (e) {
-  let currentY = e.clientY;
+// window.addEventListener("mousemove", function (e) {
+//   let currentY = e.clientY;
 
-  if (currentY < lastY) {
-    navMain.style.position = "sticky";
-    navMain.style.top = "0px";
-    navMain.style.zIndex = "1000";
-  }
+//   if (currentY < lastY) {
+//     navMain.style.position = "sticky";
+//     navMain.style.top = "0px";
+//     navMain.style.zIndex = "1000";
+//   }
 
-  lastY = currentY;
-});
+//   lastY = currentY;
+// });
 
 upPop.addEventListener("click", function () {
   window.scrollTo({

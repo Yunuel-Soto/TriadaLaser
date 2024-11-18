@@ -174,6 +174,7 @@ nav {
   width: 100%;
   position: absolute;
   top: 0px;
+  z-index: 3;
 }
 
 .content_media div .logo img {
@@ -183,6 +184,31 @@ nav {
   animation-fill-mode: both;
   animation-iteration-count: 1;
   animation-delay: 0.5s;
+}
+
+.startpage {
+  width: 100%;
+  height: 400%;
+  position: absolute;
+  background-color: #000;
+  z-index: 2;
+  top: 0px;
+  right: 0px;
+  animation-name: shadowStart;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes shadowStart {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
 }
 
 @keyframes title {
@@ -208,16 +234,6 @@ nav {
 
   100% {
     height: 200px;
-  }
-}
-
-@keyframes logo {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
   }
 }
 
